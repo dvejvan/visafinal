@@ -1,0 +1,23 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false,
+    // disable non-critical errors
+    "strict": false,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "alwaysStrict": false,
+    "strictPropertyInitialization": false,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "exactOptionalPropertyTypes": false,
+    // enable errors usually causing build errors
+    "strictFunctionTypes": true,
+    "strictNullChecks": true
+  },
+  "include": ["../**/*.ts", "../**/*.tsx"],
+  "exclude": ["../node_modules", "../.next/types/**/*"]
+}
